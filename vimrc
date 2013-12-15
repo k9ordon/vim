@@ -9,12 +9,12 @@ Bundle 'gmarik/vundle'
 Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
 Bundle 'github-theme'
-Bundle 'buftabs'
 Bundle 'git://github.com/groenewege/vim-less.git'
 Bundle 'git://github.com/lukaszkorecki/CoffeeTags.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Tagbar'
-
+Bundle 'bling/vim-airline'
+Bundle 'minibufexplorerpp'
 
 " Main
 set guioptions=egmt
@@ -50,6 +50,7 @@ highlight SpecialKey guifg=#4a4a59
 colorscheme github
 set guifont=EssentialPragmataPro:h15
 set linespacing=3
+let g:airline_theme='light'
 
 " NERDTree
 let NERDTreeChDirMode=2
@@ -77,10 +78,11 @@ let g:tagbar_type_coffee = {
 let g:tagbar_width=26
 
 " Statusbar 
-let g:buftabs_only_basename=1
-let g:buftabs_in_statusline=1
-let g:buftabs_active_highlight_group="Visual"
+"let g:buftabs_only_basename=1
+"let g:buftabs_in_statusline=1
+"let g:buftabs_active_highlight_group="Visual"
 "set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
+"set statusline=%<%f\ %h%m%r%=\ \ %-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 " onLoad
