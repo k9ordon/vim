@@ -7,8 +7,10 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle 'The-NERD-tree'
+Bundle 'FindInNERDTree'
 Bundle 'ctrlp.vim'
 Bundle 'github-theme'
+Bundle 'molokai'
 Bundle 'git://github.com/groenewege/vim-less.git'
 Bundle 'git://github.com/lukaszkorecki/CoffeeTags.git'
 Bundle 'kchmck/vim-coffee-script'
@@ -48,9 +50,13 @@ highlight SpecialKey guifg=#4a4a59
 
 " Theme
 colorscheme github
-set guifont=EssentialPragmataPro:h15
-set linespacing=3
 let g:airline_theme='light'
+
+"colorscheme molokai
+"let g:airline_theme='molokai'
+
+set guifont=EssentialPragmataPro:h16
+set linespace=2
 
 " NERDTree
 let NERDTreeChDirMode=2
@@ -92,6 +98,7 @@ set laststatus=2
 let mapleader=","
 nnoremap <Leader>r :nohlsearch<CR>
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>f :call FindInNERDTree()<CR>
 noremap <silent> <Leader>y :TagbarToggle<CR>
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
