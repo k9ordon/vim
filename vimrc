@@ -17,6 +17,7 @@ Bundle 'Tagbar'
 
 
 " Main
+set guioptions=egmt
 set hidden
 set history=500
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,node_modules/*
