@@ -10,6 +10,7 @@ Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
 Bundle 'github-theme'
 Bundle 'buftabs'
+Bundle 'git://github.com/groenewege/vim-less.git'
 
 " Vundle after plugins
 filetype plugin indent on
