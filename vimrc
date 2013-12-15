@@ -11,9 +11,10 @@ Bundle 'ctrlp.vim'
 Bundle 'github-theme'
 Bundle 'buftabs'
 Bundle 'git://github.com/groenewege/vim-less.git'
+Bundle 'git://github.com/lukaszkorecki/CoffeeTags.git'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'Tagbar'
 
-" Vundle after plugins
-filetype plugin indent on
 
 " Main
 set hidden
@@ -28,7 +29,8 @@ set smartcase
 set hlsearch
 
 " Editor
-syntax on
+syntax enable
+filetype plugin indent on
 set nu
 set wrap
 set vb
@@ -53,6 +55,22 @@ let NERDTreeChDirMode=2
 
 " Ctags
 "let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+
+" Coffeetags
+let g:tagbar_type_coffee = {
+			\ 'ctagsbin' : 'coffeetags',
+			\ 'ctagsargs' : '--include-vars',
+			\ 'kinds' : [
+			\ 'f:functions',
+			\ 'o:object',
+			\ ],
+			\ 'sro' : ".",
+			\ 'kind2scope' : {
+			\ 'f' : 'object',
+			\ 'o' : 'object',
+			\ }
+			\ }
+
 
 " Tagbar
 let g:tagbar_width=26
