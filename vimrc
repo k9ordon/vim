@@ -17,6 +17,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'Tagbar'
 Bundle 'bling/vim-airline'
 Bundle 'minibufexplorerpp'
+Bundle 'vcscommand.vim'
 
 " Main
 set guioptions=egmt
@@ -44,7 +45,7 @@ set shiftwidth=4
 set autoindent
 
 " Invisible characters
-set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×,eol:¬
+"set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
@@ -90,6 +91,9 @@ let g:tagbar_width=26
 "set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
 "set statusline=%<%f\ %h%m%r%=\ \ %-14.(%l,%c%V%)\ %P
 set laststatus=2
+
+" vcn
+let g:svndiff_autoupdate = 1
 
 " onLoad
 "autocmd VimEnter * NERDTreeToggle
