@@ -18,13 +18,21 @@ Bundle 'Tagbar'
 Bundle 'bling/vim-airline'
 Bundle 'minibufexplorerpp'
 Bundle 'vcscommand.vim'
+Bundle 'ack.vim'
+Bundle 'nerdtree-ack'
 
 " Main
 set guioptions=egmt
 set hidden
 set history=500
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,node_modules/*
-filetype indent on 
+filetype indent on
+set mouse=a
+set mousehide
+set wildmenu
+set wildmode=list:longest,full
+set splitright
+set splitbelow
 
 " Search
 set incsearch
@@ -43,6 +51,8 @@ set cursorline
 set tabstop=4
 set shiftwidth=4
 set autoindent
+set spell
+set backspace=indent,eol,start
 
 " Invisible characters
 "set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×,eol:¬
@@ -61,6 +71,10 @@ set linespace=2
 
 " NERDTree
 let NERDTreeChDirMode=2
+let NERDTreeShowHidden=1
+
+" CtrlP
+let g:ctrlp_show_hidden = 1
 
 " Ctags
 "let g:tagbar_ctags_bin='/usr/local/bin/ctags'
