@@ -15,8 +15,8 @@ Bundle 'git://github.com/groenewege/vim-less.git'
 Bundle 'git://github.com/lukaszkorecki/CoffeeTags.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Tagbar'
+Bundle 'vim-bufferline'
 Bundle 'bling/vim-airline'
-Bundle 'minibufexplorerpp'
 Bundle 'vcscommand.vim'
 Bundle 'ack.vim'
 Bundle 'nerdtree-ack'
@@ -60,11 +60,11 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Theme
-colorscheme github
-let g:airline_theme='light'
+"colorscheme github
+"let g:airline_theme='light'
 
-"colorscheme molokai
-"let g:airline_theme='molokai'
+colorscheme molokai
+let g:airline_theme='molokai'
 
 set guifont=EssentialPragmataPro:h16
 set linespace=2
@@ -105,6 +105,8 @@ let g:tagbar_width=26
 "set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
 "set statusline=%<%f\ %h%m%r%=\ \ %-14.(%l,%c%V%)\ %P
 set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " vcn
 let g:svndiff_autoupdate = 1
@@ -114,14 +116,14 @@ let g:svndiff_autoupdate = 1
 
 " keys
 let mapleader=","
-nnoremap <Leader>r :nohlsearch<CR>
+noremap <Leader>r :nohlsearch<CR>
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
-nnoremap <silent> <Leader>f :call FindInNERDTree()<CR>
+noremap <silent> <Leader>f :call FindInNERDTree()<CR>
 noremap <silent> <Leader>y :TagbarToggle<CR>
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
-nmap <Leader>i :set list!<CR>
+nnoremap <Leader>i :set list!<CR>
 noremap <silent> <Leader>p :CtrlP<CR>
 noremap <silent> <Leader>b :CtrlPBuffer<CR>
