@@ -66,7 +66,7 @@ highlight SpecialKey guifg=#4a4a59
 colorscheme molokai
 let g:airline_theme='molokai'
 
-set guifont=EssentialPragmataPro:h16
+set guifont=EssentialPragmataPro:h18
 set linespace=2
 
 " NERDTree
@@ -127,3 +127,5 @@ nnoremap <Leader>k <C-w>k
 nnoremap <Leader>i :set list!<CR>
 noremap <silent> <Leader>p :CtrlP<CR>
 noremap <silent> <Leader>b :CtrlPBuffer<CR>
+noremap <C-tab> :bnext<CR>
+noremap <C-S-tab> :bprevious<CR>
