@@ -21,6 +21,7 @@ Bundle 'vcscommand.vim'
 Bundle 'ack.vim'
 Bundle 'nerdtree-ack'
 Bundle 'vim-multiple-cursors'
+Bundle 'IndexedSearch'
 
 " Main
 set guioptions=egmt
