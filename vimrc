@@ -20,6 +20,7 @@ Bundle 'bling/vim-airline'
 Bundle 'vcscommand.vim'
 Bundle 'ack.vim'
 Bundle 'nerdtree-ack'
+Bundle 'vim-multiple-cursors'
 
 " Main
 set guioptions=egmt
@@ -67,7 +68,7 @@ colorscheme molokai
 let g:airline_theme='molokai'
 
 set guifont=EssentialPragmataPro:h18
-set linespace=2
+set linespace=1
 
 " NERDTree
 let NERDTreeChDirMode=2
