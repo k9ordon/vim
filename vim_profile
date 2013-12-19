@@ -1,0 +1,2 @@
+" path
+let $PATH='~/.nvm/v0.10.21/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/bin:$PATH'

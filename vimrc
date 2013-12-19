@@ -76,7 +76,7 @@ colorscheme github
 "colorscheme autumnleaf
 "colorscheme blueshift
 
-
+" Font
 
 set guifont=EssentialPragmataPro:h18
 "set guifont=Menlo:h16
@@ -160,7 +160,8 @@ noremap <silent> <Leader>m :CtrlPMRUFiles<CR>
 " tabs handling
 nnoremap <C-tab> :bnext<CR>
 nnoremap <C-S-tab> :bprevious<CR>
-nnoremap <Leader>w :bd<CR>
+nnoremap <Leader>w :bd!<CR>
 nnoremap <Leader>t :enew<CR>
 
-
+" locals
+source ~/.vim_profile
