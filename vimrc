@@ -68,7 +68,7 @@ highlight SpecialKey guifg=#4a4a59
 
 " Theme
 colorscheme github
-"let g:airline_theme='light'
+let g:airline_theme='light'
 
 "colorscheme molokai
 "let g:airline_theme='molokai'
@@ -86,6 +86,7 @@ set guifont=EssentialPragmataPro:h18
 " NERDTree
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1
 
 " CtrlP
 let g:ctrlp_show_hidden = 1
