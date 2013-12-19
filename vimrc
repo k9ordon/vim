@@ -23,6 +23,7 @@ Bundle 'nerdtree-ack'
 Bundle 'vim-multiple-cursors'
 Bundle 'IndexedSearch'
 Bundle 'vim-markdown'
+Bundle 'git://github.com/oplatek/Conque-Shell.git'
 
 " Main
 set guioptions=egmt
@@ -63,11 +64,11 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Theme
-"colorscheme github
-"let g:airline_theme='light'
+colorscheme github
+let g:airline_theme='light'
 
-colorscheme molokai
-let g:airline_theme='molokai'
+"colorscheme molokai
+"let g:airline_theme='molokai'
 
 set guifont=EssentialPragmataPro:h18
 set linespace=1
@@ -113,6 +114,11 @@ let g:airline_powerline_fonts = 1
 
 " vcn
 let g:svndiff_autoupdate = 1
+
+" conque shell
+let g:ConqueTerm_ReadUnfocused = 1
+let g:ConqueTerm_InsertOnEnter = 1
+let g:ConqueTerm_CloseOnEnd = 1
 
 " onLoad
 "autocmd VimEnter * NERDTreeToggle
