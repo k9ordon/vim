@@ -24,6 +24,8 @@ Bundle 'vim-multiple-cursors'
 Bundle 'IndexedSearch'
 Bundle 'vim-markdown'
 Bundle 'git://github.com/oplatek/Conque-Shell.git'
+Bundle 'Color-Scheme-Explorer'
+Bundle 'git://github.com/flazz/vim-colorschemes.git'
 
 " Main
 set guioptions=egmt
@@ -65,13 +67,20 @@ highlight SpecialKey guifg=#4a4a59
 
 " Theme
 colorscheme github
-let g:airline_theme='light'
+"let g:airline_theme='light'
 
 "colorscheme molokai
 "let g:airline_theme='molokai'
 
+"colorscheme automation
+colorscheme autumnleaf
+"colorscheme blueshift
+
+
+
 set guifont=EssentialPragmataPro:h18
-set linespace=1
+"set guifont=Menlo:h16
+"set linespace=1
 
 " NERDTree
 let NERDTreeChDirMode=2
