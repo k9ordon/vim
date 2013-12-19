@@ -73,7 +73,7 @@ colorscheme github
 "let g:airline_theme='molokai'
 
 "colorscheme automation
-colorscheme autumnleaf
+"colorscheme autumnleaf
 "colorscheme blueshift
 
 
@@ -131,19 +131,36 @@ let g:ConqueTerm_CloseOnEnd = 1
 
 " onLoad
 "autocmd VimEnter * NERDTreeToggle
+autocmd VimEnter * CtrlPMRUFiles 
 
 " keys
 let mapleader=","
+
+" reset search
 noremap <Leader>r :nohlsearch<CR>
+
+" panels
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 noremap <silent> <Leader>f :call FindInNERDTree()<CR>
 noremap <silent> <Leader>y :TagbarToggle<CR>
+noremap <silent> <Leader>z :ConqueTermVSplit zsh<CR>
+
+" window switching
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>i :set list!<CR>
+
+" open files
 noremap <silent> <Leader>p :CtrlP<CR>
 noremap <silent> <Leader>b :CtrlPBuffer<CR>
-noremap <C-tab> :bnext<CR>
-noremap <C-S-tab> :bprevious<CR>
+noremap <silent> <Leader>m :CtrlPMRUFiles<CR>
+
+" tabs handling
+nnoremap <C-tab> :bnext<CR>
+nnoremap <C-S-tab> :bprevious<CR>
+nnoremap <Leader>w :bd<CR>
+nnoremap <Leader>t :enew<CR>
+
+
