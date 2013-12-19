@@ -26,6 +26,7 @@ Bundle 'vim-markdown'
 Bundle 'git://github.com/oplatek/Conque-Shell.git'
 Bundle 'Color-Scheme-Explorer'
 Bundle 'git://github.com/flazz/vim-colorschemes.git'
+Bundle 'vcscommand.vim'
 
 " Main
 set guioptions=egmt
